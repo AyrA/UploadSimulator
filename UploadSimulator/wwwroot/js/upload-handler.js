@@ -1,7 +1,3 @@
-function delay(timeout) {
-    return new Promise(a => setTimeout(a, timeout));
-}
-
 class UploadInfo {
     #fileList;
 
@@ -40,9 +36,13 @@ class UploadInfo {
                 progressBytes: Math.round(item.size / 100 * progress),
                 progressPercent: progress / 100
             });
-            await delay(200);
+            await this.#delay(200);
             progress += 20;
         }
+    }
+
+    #delay(ms) {
+        return new Promise((a) => setTimeout(a, ms));
     }
 }
 
@@ -69,8 +69,4 @@ function startUpload(files) {
     };
     info.upload();
     return info;
-}
-
-function getUploadedFiles() {
-
 }

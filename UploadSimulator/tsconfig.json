@@ -1,13 +1,14 @@
 {
     "compileOnSave": true,
     "compilerOptions": {
-        "target": "ES2017",
+        "target": "ES2022",
         "strict": true,
         "noImplicitAny": true,
         "noEmitOnError": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true,
+        "removeComments": true,
         "sourceMap": true,
         "outDir": "wwwroot/js"
     },

@@ -4,7 +4,7 @@
     progressPercent: number
 }
 
-declare interface UploadInfo {
+declare class UploadInfo {
     count(): number;
     cancel(): void;
     files: File[];
