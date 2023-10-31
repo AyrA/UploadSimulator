@@ -1,0 +1,15 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "ES2017",
+        "strict": true,
+        "noImplicitAny": true,
+        "noEmitOnError": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "sourceMap": true,
+        "outDir": "wwwroot/js"
+    },
+    "include": ["wwwroot/ts/*"]
+}

@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="display-4">Upload tester</h1>
+
+<label class="btn btn-primary">
+    <input type="file" class="d-none" id="fileUploadControl" multiple />
+    Select file
+</label>
+
+@section Scripts{
+    <script src="~/js/upload-handler.js" asp-append-version="true" defer></script>
+}
